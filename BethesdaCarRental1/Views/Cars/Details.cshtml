@@ -1,0 +1,42 @@
+﻿@model BethesdaCarRental5.Models.Car
+
+@{
+    ViewBag.Title = "Car Details";
+}
+
+<h2 class="common-font text-center bold blue">Car/Vehicle Details</h2>
+
+<hr />
+
+<div class="containment">
+    <dl class="dl-horizontal common-font">
+        <dt>@Html.DisplayNameFor(model => model.CarId)</dt>
+        <dd>@Html.DisplayFor(model => model.CarId)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.TagNumber)</dt>
+        <dd>@Html.DisplayFor(model => model.TagNumber)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Category)</dt>
+        <dd>@Html.DisplayFor(model => model.Category)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Make)</dt>
+        <dd>@Html.DisplayFor(model => model.Make)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Model)</dt>
+        <dd>@Html.DisplayFor(model => model.Model)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Passengers)</dt>
+        <dd>@Html.DisplayFor(model => model.Passengers)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Condition)</dt>
+        <dd>@Html.DisplayFor(model => model.Condition)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.AvailabilityStatus)</dt>
+        <dd>@Html.DisplayFor(model => model.AvailabilityStatus)</dd>
+    </dl>
+</div>
+
+<p class="text-center">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) ::
+    @Html.ActionLink("Cars/Vehicles", "Index")
+</p>
